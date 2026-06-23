@@ -10,7 +10,7 @@ local Window = Fluent:CreateWindow({
     Acrylic = true,
     Theme = "RaronBlue",
     MinimizeKey = Enum.KeyCode.LeftControl,
-    Logo = "https://raw.githubusercontent.com/slayrixxxxxxxxxx/Raron-HUB/refs/heads/main/Open-Graph-Image.png"
+    Logo = "rbxassetid://98333497640175"
 })
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
