@@ -1,7 +1,6 @@
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Byebaih1/x/main/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Byebaih1/x/main/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Byebaih1/x/main/Addons/InterfaceManager.lua"))()
-local BannerManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Byebaih1/x/main/Addons/BannerManager.lua"))()
 
 local Window = Fluent:CreateWindow({
     Title = "Raron Hub",
@@ -30,6 +29,15 @@ do
     }) 
 
 
+
+    -- Banner แบบบล็อกใน Tab (โหลดรูปจาก URL)
+    -- เปลี่ยน Url เป็นลิงก์รูปของคุณ (imgur, discord CDN ฯลฯ)
+    Tabs.Main:AddImageBanner({
+        Url = "https://raw.githubusercontent.com/slayrixxxxxxxxxx/Raron-HUB/refs/heads/main/Open-Graph-Image.png", -- << เปลี่ยนตรงนี้
+        Height = 120,         -- ความสูงของกล่อง banner (pixels)
+        ScaleType = "Crop",   -- Crop / Fit / Stretch
+        Transparency = 0,
+    })
 
     Tabs.Main:AddParagraph({
         Title = "Paragraph",
